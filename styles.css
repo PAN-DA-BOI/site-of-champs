@@ -1,0 +1,11 @@
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    }
+body {
+	background-color: #454545;
+}
+h1,h2,h3,h4	{
+	color: #adadad
+}
