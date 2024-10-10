@@ -9,3 +9,9 @@ body {
 h1,h2,h3,h4	{
 	color: #adadad
 }
+#footer{
+	height:50px;
+	background:#000000;
+	margin:0;
+	padding:0;
+	}
