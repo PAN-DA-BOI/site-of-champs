@@ -9,6 +9,11 @@ body {
 h1,h2,h3,h4	{
 	color: #adadad
 }
+.picture-fix{
+	object-fit: cover;
+	width: 300px;
+	height: 400px;
+}
 #footer {
   background-color: #666666; /* Light background color */
   text-align: center; /* Center the content */
