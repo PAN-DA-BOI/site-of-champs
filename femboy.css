@@ -36,5 +36,9 @@
     height: auto;
 }
 body {
- background-image: url("images/femboy flag.pdf");
+  background-image: url("images/femboy flag.pdf");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
