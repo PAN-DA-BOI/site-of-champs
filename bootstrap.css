@@ -2535,6 +2535,17 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
+.btn-color-important {
+  color: #fff;
+  background-color: #4df0ff;
+  border-color: #4df0ff;
+}
+
+.btn-color-important:hover {
+  color: #fff;
+  background-color: #2222ff;
+  border-color: #4444ff;
+}
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;
