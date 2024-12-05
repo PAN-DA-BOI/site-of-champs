@@ -36,7 +36,7 @@
     height: auto;
 }
 body {
-  background-image: url(' https://uploads.dailydot.com/2023/11/Elmo-Fire.jpg?q=65&auto=format&w=1200&ar=2:1&fit=crop');
+  background-image: url('images/elmo.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
