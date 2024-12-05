@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locate Suspected Building</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="crossorigin=""/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/map-style.css">
+</head>
+<body>
+    <div class="header">Locate Suspected Building</div>
+    <div class="container">
+        <div class="side-panel">
+			<a href="index.html" class="btn btn-color-important">Go to Home</a>
+            <div class="main-part">
+                <button class="location-button" data-lat="34.0522" data-lng="-118.2437" data-notes="Note: This is location 1.">Location 1</button>
+                <button class="location-button" data-lat="40.7128" data-lng="-74.0060" data-notes="Note: This is location 2.">Location 2</button>
+                <button class="location-button" data-lat="41.8781" data-lng="-87.6298" data-notes="Note: This is location 3.">Location 3</button>
+            </div>
+            <div class="add-part">
+                <button id="add-location-button">Add Location</button>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin=""></script>
+    <script src="scripts/map-script.js"></script>
+</body>
+</html>

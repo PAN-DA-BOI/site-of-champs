@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #454545;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+.side-panel {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-part {
+    flex: 7;
+    overflow-y: auto;
+}
+
+.add-part {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.location-button:hover {
+    background-color: #e0e0e0;
+}
+
+#map {
+    flex: 1;
+}
