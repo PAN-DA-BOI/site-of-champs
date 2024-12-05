@@ -23,7 +23,7 @@ document.querySelectorAll('.location-button').forEach(button => {
     button.addEventListener('click', function() {
         var lat = this.getAttribute('data-lat');
         var lng = this.getAttribute('data-lng');
-        map.setView([lat, lng], 16);
+        map.setView([lat, lng], 25);
     });
 
     button.addEventListener('mouseover', function() {
