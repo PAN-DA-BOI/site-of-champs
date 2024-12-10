@@ -9,8 +9,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var locations = [
     { lat: 40.88712, lng: -111.8952, notes: "Note: Old Cinemark", name: "Movie Theater" },
     { lat: 40.90575, lng: -111.8774, notes: "Note: The building next to the DI", name: "Joann" },
-    { lat: 40.742931, lng: -111.929172, notes: "Note: abandoned food world building", name: "Food World" }
-	{ lat: 40.753712, lng: -111.900832, notes: "Note:  multipule buildings in area", name: "construction" }
+    { lat: 40.742931, lng: -111.929172, notes: "Note: abandoned food world building", name: "Food World" },
+    { lat: 40.753712, lng: -111.900832, notes: "Note: multiple buildings in area", name: "construction" }
 ];
 
 // Add markers to the map
@@ -24,7 +24,7 @@ document.querySelectorAll('.location-button').forEach(button => {
     button.addEventListener('click', function() {
         var lat = this.getAttribute('data-lat');
         var lng = this.getAttribute('data-lng');
-        map.setView([lat, lng], 25);
+        map.setView([lat, lng], 20); // Changed zoom level to 16
     });
 
     button.addEventListener('mouseover', function() {
