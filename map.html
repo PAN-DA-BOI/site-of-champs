@@ -15,15 +15,19 @@
         <div class="side-panel">
             <a href="index.html" class="btn btn-color-important">Go to Home</a>
             <div class="main-part">
-                <button class="location-button" data-lat="40.88712" data-lng="-111.8952" data-notes="Note: Old Cinemark">Movie Theater</button>
-                <button class="location-button" data-lat="40.90575" data-lng="-111.8774" data-notes="Note: The building next to the DI">Joann</button>
-                <button class="location-button" data-lat="40.742931" data-lng="-111.929172" data-notes="Note: abandoned food world building">Food World</button>
-                <button class="location-button" data-lat="40.753712" data-lng="-111.900832" data-notes="Note: multiple buildings in area">construction</button>
+                <button class="location-button" data-lat="40.88712" data-lng="-111.8952" data-notes="Note: Old Cinemark" data-folder="movie-theater">Movie Theater</button>
+                <button class="location-button" data-lat="40.742931" data-lng="-111.929172" data-notes="Note: abandoned food world building" data-folder="food-world">Food World</button>
+                <button class="location-button" data-lat="40.753712" data-lng="-111.900832" data-notes="Note: multiple buildings in area" data-folder="construction">construction</button>
             </div>
         </div>
         <div id="map"></div>
+        <div class="sidebar" id="sidebar">
+            <h3>Files of Location</h3>
+            <ul class="file-list" id="file-list">
+            </ul>
+        </div>
     </div>
-    <div id="notes"></div> <!-- Added this div to display notes -->
+    <div id="notes"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="scripts/map-script.js"></script>
 </body>
