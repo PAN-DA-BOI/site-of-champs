@@ -17,6 +17,8 @@ var files = [
 	{ path: 'food-world/image (7).jpg', folder: 'food-world' },
 	{ path: 'food-world/image (8).jpg', folder: 'food-world' },
 	{ path: 'food-world/image (9).jpg', folder: 'food-world' },
+	{ path: 'food-world/image (10).jpg', folder: 'food-world' },
+	{ path: 'food-world/image (11).jpg', folder: 'food-world' },
 	{ path: 'theater/theater.html', folder: 'movie-theater' },
 	{ path: 'theater/image (1).jpg', folder: 'movie-theater' },
 	{ path: 'theater/image (2).jpg', folder: 'movie-theater' },
