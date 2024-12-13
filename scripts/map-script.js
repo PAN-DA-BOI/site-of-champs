@@ -27,6 +27,7 @@ var files = [
 	{ path: 'theater/image (5).jpg', folder: 'movie-theater' },
 	{ path: 'construction/construction.html', folder: 'construction' },
 	{ path: 'construction/image (1).jpg', folder: 'construction' },
+	{ path: 'hospital/hospital.html', folder: 'hospital' },
     // Add other files here
 ];
 
@@ -43,7 +44,7 @@ var folderFiles = files.reduce((acc, file) => {
 var locations = [
     { lat: 40.88712, lng: -111.8952, notes: "Note: Old Cinemark", name: "Movie Theater", folder: 'movie-theater' },
     { lat: 40.742931, lng: -111.929172, notes: "Note: abandoned food world building", name: "Food World", folder: 'food-world' },
-    { lat: 40.753712, lng: -111.900832, notes: "Note: multiple buildings in area", name: "construction", folder: 'construction' }
+    { lat: 40.753712, lng: -111.900832, notes: "Note: multiple buildings in area", name: "construction", folder: 'construction' },
 	{ lat: 41.225611, lng: -111.991836, notes: "Note: abandoned hospital", name: "hospital", folder: 'hospital' }
 ];
 
@@ -61,6 +62,9 @@ document.querySelectorAll('.location-button').forEach(button => {
         var folder = this.getAttribute('data-folder');
         map.setView([lat, lng], 20);
 
+        // Debugging statement
+        console.log(`Button clicked: ${this.textContent}, Folder: ${folder}`);
+
         // Find the corresponding location and display its files
         var location = locations.find(loc => loc.name === this.textContent);
         if (location && folderFiles[folder]) {
@@ -76,6 +80,8 @@ document.querySelectorAll('.location-button').forEach(button => {
                 fileList.appendChild(listItem);
             });
             document.getElementById('sidebar').style.display = 'block';
+        } else {
+            console.error(`Folder not found: ${folder}`);
         }
     });
 
