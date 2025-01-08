@@ -28,6 +28,7 @@ var files = [
 	{ path: 'construction/construction.html', folder: 'construction' },
 	{ path: 'construction/image (1).jpg', folder: 'construction' },
 	{ path: 'hospital/hospital.html', folder: 'hospital' },
+	{ path: 'house/house.html', folder: 'house' },
     // Add other files here
 ];
 
@@ -45,7 +46,8 @@ var locations = [
     { lat: 40.88712, lng: -111.8952, notes: "Note: Old Cinemark", name: "Movie Theater", folder: 'movie-theater' },
     { lat: 40.742931, lng: -111.929172, notes: "Note: abandoned food world building", name: "Food World", folder: 'food-world' },
     { lat: 40.753712, lng: -111.900832, notes: "Note: multiple buildings in area", name: "construction", folder: 'construction' },
-	{ lat: 41.225611, lng: -111.991836, notes: "Note: abandoned hospital", name: "hospital", folder: 'hospital' }
+	{ lat: 41.225611, lng: -111.991836, notes: "Note: abandoned hospital", name: "hospital", folder: 'hospital' },
+	{ lat: 40.901375, lng: -111.885932, notes: "Note: abandoned house", name: "house", folder: 'house' }
 ];
 
 // Add markers to the map
