@@ -106,4 +106,35 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    col
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+}
+
+.image-button:hover img {
+    opacity: 0.7; /* Slightly increase opacity on hover */
+}
+
+/* Large card styling */
+.large-card {
+    width: 100%;
+    height: auto; /* Adjust the height to fit the content */
+}
+
+.large-card .picture-fix {
+    width: 100%;
+    height: auto; /* Adjust the height of the image to fit the larger card */
+}
+
+/* Ensure four columns per row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
